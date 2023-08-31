@@ -16,7 +16,10 @@ function MainBody({ showPost }) {
       </div>
       <div className={classes.container}>
       {posts.map((e) => (
-          <div className={classes.items}>{e.content}</div>
+          <div className={classes.items}>
+            <p>{e.content}</p>
+            <p>{e.writer}</p>
+          </div>
         ))}
       </div>
     </>
